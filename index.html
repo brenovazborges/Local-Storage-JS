@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="JS/script.js"></script>
+    <title>Local Storage</title>
+</head>
+
+<body>
+    <form id="valid" action="">
+        <fieldset>
+            <legend id="titulo">DADOS PESSOAIS</legend>
+            <label for="nome">NOME:</label><br>
+            <input type="text" id="nome" name="nome"><br><br>
+            <label for="email">EMAIL:</label><br>
+            <input type="text" id="email" name="email"><br><br>
+            <label for="indice">INDICE:</label><br>
+            <input type="text" id="indice" name="indice"><br><br>
+            <input id="btn" type="button" value="ENVIAR" onclick="InsertData()">
+            <input id="btn" type="button" value="CONSULTAR" onclick="ViewAllData()">
+            <input id="btn" type="button" value="ATUALIZAR" onclick="AtualizaDados()">
+            <input id="btn" type="button" value="APAGAR" onclick="DeleteData()">
+        </fieldset>
+    </form>
+
+    <p id="resultado"></p>
+</body>
+</html>
